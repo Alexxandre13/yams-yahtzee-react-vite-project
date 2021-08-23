@@ -1,0 +1,25 @@
+.players {
+    display: flex;
+    flex-direction: column;
+}
+
+.addAndSub {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.add, .sub {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.add:checked, .sub:checked {
+    background-color: black;
+}

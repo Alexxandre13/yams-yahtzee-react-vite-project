@@ -1,0 +1,134 @@
+:root {
+    --numberOfLis: 20;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+body {
+    background-color: wheat;
+    /* background: url('../static/alpes.jpg') no-repeat; */
+    background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+button {
+    padding: 5px;
+    font-size: 1em;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.group-score-label li {
+    border: 1px solid black;
+    border-top: 0;
+    border-left: 0;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bolder;
+    height: calc(100vh / var(--numberOfLis));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group-score-label li:last-child {
+    border-bottom: 0;
+}
+
+.score-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.score-player {
+    border-right: 1px solid black;
+}
+
+.score-player li {
+    height: calc(100vh / var(--numberOfLis));
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+}
+
+.socre-player li button {
+    height: 100%;
+}
+
+.cancel {
+    background-color: rgb(255, 109, 109);
+}
+
+.selected {
+    background-color: rgb(30, 252, 30);
+}
+
+.total-of-totals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 2em;
+    border-bottom: 0;
+}
+
+.input-value input {
+    width: 80px;
+    font-size: larger;
+    text-align: center;
+    height: 1.7em;
+}
+
+.sub-total {
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+/* Hide arrow number input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+li.reset {
+    flex-direction: row;
+    justify-content: space-around;
+}
