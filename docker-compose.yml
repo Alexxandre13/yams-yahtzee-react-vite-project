@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+    yams:
+        build: .
+        image: yams
+        container_name: yams
+        ports:
+            - '3000:3000'

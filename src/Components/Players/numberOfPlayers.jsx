@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './numberOfPlayers.css'
+import './NumberOfPlayers.css'
 
 export default function NumberOfPlayers({ setPlayersNumber, GAME_PHASES, changeGamePhase }) {
 
