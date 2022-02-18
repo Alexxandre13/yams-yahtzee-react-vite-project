@@ -5,4 +5,13 @@ services:
         image: yams
         container_name: yams
         ports:
-            - '3000:3000'
+            - '5100:3000'
+        networks:
+          - caddy
+        labels:
+          caddy: yams.reges.fr
+          caddy.reverse_proxy: "{{upstreams 5100}}"
+
+networks:
+  caddy:
+    external: true
