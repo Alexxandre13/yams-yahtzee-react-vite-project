@@ -7,8 +7,8 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 3000,
     hmr: {
-      host: '0.0.0.0',
-      port: 3000,
+      host: 'yams.regex.fr',
+      port: 443,
       protocol: 'wss'
     }
   },
