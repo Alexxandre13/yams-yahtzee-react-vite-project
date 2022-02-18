@@ -15,3 +15,7 @@ services:
 
 volumes:
   caddy_static: {}
+
+networks:
+  caddy:
+    external: true
