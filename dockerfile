@@ -8,6 +8,4 @@ WORKDIR /app
 
 RUN npm ci
 
-RUN npm run build
-
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "build"]
