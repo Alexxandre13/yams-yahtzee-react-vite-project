@@ -4,14 +4,9 @@ RUN mkdir /app
 
 WORKDIR /app
 
-COPY package.json .
-COPY package-lock.json .
-
-RUN npm ci
-
 COPY . .
 
-RUN npm run build
+RUN npm ci && npm run build
 
 FROM lipanski/docker-static-website:latest
 

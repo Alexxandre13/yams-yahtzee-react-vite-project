@@ -3,14 +3,14 @@ services:
     yams:
         build: .
         container_name: yams
-        networks:
-          - caddy
-        # ports:
-        #   - 3000:3000
+        # networks:
+        #   - caddy
+        ports:
+          - 3000:3000
         labels:
-          caddy: yams.reges.fr
+          caddy: yam s.reges.fr
           caddy.reverse_proxy: "{{upstreams 3000}}"
 
-networks:
-  caddy:
-    external: true
+# networks:
+#   caddy:
+#     external: true
