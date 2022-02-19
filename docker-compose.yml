@@ -4,8 +4,6 @@ services:
         build: .
         networks:
           - caddy
-        # ports:
-        #   - 3000:3000
         labels:
           caddy: yams.reges.fr
           caddy.reverse_proxy: "{{upstreams 3000}}"
