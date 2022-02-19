@@ -1,4 +1,4 @@
-FROM node:17-buster as builder
+FROM node:current-alpine3.15 as builder
 
 RUN mkdir /app
 
