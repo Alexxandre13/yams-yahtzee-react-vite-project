@@ -6,15 +6,9 @@ services:
         container_name: yams
         networks:
           - caddy
-        volumes:
-          - caddy_static:/app/dist
         labels:
           caddy: yams.reges.fr
-          caddy.root: "* /"
-          caddy.file_server:
-
-volumes:
-  caddy_static: {}
+          caddy.reverse_proxy: "{{upstreams 3000}}"
 
 networks:
   caddy:
