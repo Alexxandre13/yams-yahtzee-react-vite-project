@@ -2,10 +2,10 @@ FROM node:current-alpine3.15 as builder
 
 RUN mkdir /app
 
-COPY package.json /app
-COPY package-lock.json /app
-
 WORKDIR /app
+
+COPY package.json .
+COPY package-lock.json .
 
 RUN npm ci
 
