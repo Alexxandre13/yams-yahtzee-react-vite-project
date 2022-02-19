@@ -6,7 +6,9 @@ WORKDIR /app
 
 COPY . .
 
-RUN npm install && npm run build
+RUN npm install
+
+RUN npm run build
 
 FROM lipanski/docker-static-website:latest
 
