@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import NumberOfPlayers from '../Players/NumberOfPlayers'
+import NumberOfPlayers from '../Players/NumbPlayers'
 import NameOfPlayers from '../Players/NameOfPlayers'
 import Game from '../Yams/Game'
 

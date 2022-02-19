@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './numberOfPlayers.css'
 
-export default function NumberOfPlayers({ setPlayersNumber, GAME_PHASES, changeGamePhase }) {
+export default function NumbPlayers({ setPlayersNumber, GAME_PHASES, changeGamePhase }) {
 
   const minPlayers = 2
   const maxPlayers = 9
