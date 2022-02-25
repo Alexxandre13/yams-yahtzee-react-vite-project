@@ -1,12 +1,15 @@
 version: '3.7'
 services:
     yams:
-        build: .
-        networks:
-          - caddy
-        labels:
-          caddy: yams.reges.fr
-          caddy.reverse_proxy: "{{upstreams 3000}}"
+      container_name: yams
+      build: .
+      ports:
+        - 8043:8043
+      networks:
+        - caddy
+      labels:
+        caddy: yams.reges.fr
+        caddy.reverse_proxy: "{{upstreams 3000}}"
 
 networks:
   caddy:

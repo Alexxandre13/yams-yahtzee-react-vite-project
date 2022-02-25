@@ -4,5 +4,7 @@ WORKDIR /app
 COPY . .
 RUN npm ci && npm run build
 
-FROM lipanski/docker-static-website:latest
-COPY --from=builder /app/dist .
+FROM pierrezemb/gostatic:latest
+COPY --from=builder /app/dist /srv/http
+EXPOSE 8043
+CMD ["goStatic"]
