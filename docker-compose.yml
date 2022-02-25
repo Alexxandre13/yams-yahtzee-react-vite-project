@@ -3,8 +3,6 @@ services:
     yams:
       container_name: yams
       build: .
-      ports:
-        - 8043:8043
       networks:
         - caddy
       labels:
