@@ -1,10 +1,14 @@
+---
 kind: pipeline
 type: docker
-name: default
+name: build & deploy
 
 steps:
-- name: greeting
-  image: alpine
+- name: Build the app
+  image: node:current-alpine3.15
+  volumes:
+  - name: app
+    path: /dist
   commands:
-  - echo hello
-  - echo world
+  - npm ci
+  - npm run build
