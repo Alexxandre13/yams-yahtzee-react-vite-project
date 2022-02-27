@@ -4,6 +4,7 @@ WORKDIR /app
 COPY . .
 RUN npm ci && npm run build
 
+# https://github.com/PierreZ/goStatic
 FROM pierrezemb/gostatic:latest
 COPY --from=builder /app/dist /srv/http
 EXPOSE 8043
