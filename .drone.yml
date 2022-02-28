@@ -12,3 +12,4 @@ steps:
   commands:
   - npm ci
   - npm run build
+  - echo OK
