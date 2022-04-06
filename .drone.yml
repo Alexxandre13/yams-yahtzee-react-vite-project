@@ -13,3 +13,4 @@ steps:
   - npm ci
   - npm run build
   - echo OK
+  - echo OK2
