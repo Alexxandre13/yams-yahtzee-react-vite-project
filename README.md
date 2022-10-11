@@ -27,3 +27,4 @@ Files are build into the dist folder.
 ## Docker
 
 https://github.com/lipanski/docker-static-website
+
